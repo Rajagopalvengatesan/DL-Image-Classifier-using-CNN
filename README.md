@@ -1,4 +1,3 @@
-
 # DL-Convolutional Deep Neural Network for Image Classification
 
 ## AIM
@@ -63,9 +62,9 @@ Fully Connected: 10 neurons (output), Softmax
 ---
 ## PROGRAM
 
-### Name: Sanjai S
+### Name: RAJA GOPAL V 
 
-### Register Number: 212223230185
+### Register Number: 212223240134
  
 ```python
 import torch
