@@ -155,8 +155,8 @@ if torch.cuda.is_available():
     model.to(device)
 
 # Print model summary
-print('Name:Sanjai S')
-print('Register Number: 212223230185')
+print('Name: Rajagopal V')
+print('Register Number: 212223240134')
 summary(model, input_size=(1, 28, 28))
 ```
 
@@ -187,9 +187,9 @@ def train_model(model, train_loader, num_epochs=5):
             optimizer.step()
 
             running_loss += loss.item()
-            print('Name:Sanjai S')
-            print('Register Number: 212223230185')
-        
+
+        print('Name: Rajagopal V')
+        print('Register Number: 212223240134')
         print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {running_loss/len(train_loader):.4f}')
 ```
 
@@ -221,26 +221,24 @@ def test_model(model, test_loader):
             all_labels.extend(labels.cpu().numpy())
 
     accuracy = correct / total
-    
-    print('Name:Sanjai S')
-    print('Register Number: 212223230185')
+    print('Name: Rajagopal V')
+    print('Register Number: 212223240134')
     print(f'Test Accuracy: {accuracy:.4f}')
     # Compute confusion matrix
     cm = confusion_matrix(all_labels, all_preds)
     plt.figure(figsize=(8, 6))
-    print('Name:Sanjai S')
-    print('Register Number: 212223230185')
+    print('Name: Rajagopal V')
+    print('Register Number: 212223240134')
     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=test_dataset.classes, yticklabels=test_dataset.classes)
     plt.xlabel('Predicted')
     plt.ylabel('Actual')
     plt.title('Confusion Matrix')
     plt.show()
     # Print classification report
-    print('Name:Sanjai S')
-    print('Register Number: 212223230185')
+    print('Name: Rajagopal V')
+    print('Register Number: 21222324013')
     print("Classification Report:")
-    print(classification_report(all_labels, all_preds, target_names=[str(i) for i in range(10)]))
-```
+    print(classification_report(all_labels, all_preds, target_names=[str(i) for i in range(10)]))```
 
 ```python
 
@@ -249,6 +247,7 @@ test_model(model, test_loader)
 ```
 
 ```python
+
 
 ## Step 5: Predict on a Single Image
 def predict_image(model, image_index, dataset):
@@ -263,9 +262,8 @@ def predict_image(model, image_index, dataset):
 
     class_names = [str(i) for i in range(10)]
 
-    
-    print('Name:Sanjai S')
-    print('Register Number: 212223230185')
+    print('Name: Rajagopal V')
+    print('Register Number: 212223240134')
     plt.imshow(image.cpu().squeeze(), cmap="gray")
     plt.title(f'Actual: {class_names[label]}\nPredicted: {class_names[predicted.item()]}')
     plt.axis("off")
@@ -284,24 +282,24 @@ predict_image(model, image_index=80, dataset=test_dataset)
 ### OUTPUT
 
 ## Training Loss per Epoch
-<img width="478" height="691" alt="Screenshot 2025-09-24 114950" src="https://github.com/user-attachments/assets/149c1817-38b0-4cfe-9d42-237608de2b23" />
+<img width="353" height="718" alt="image" src="https://github.com/user-attachments/assets/e35ac9f4-fd2b-40f8-ad73-731343e39334" />
 
 
 
 ## Confusion Matrix
 
-<img width="821" height="737" alt="Screenshot 2025-09-24 115201" src="https://github.com/user-attachments/assets/c5535e7b-d5cc-41db-8b07-aa3f12bfc4c2" />
+<img width="788" height="765" alt="image" src="https://github.com/user-attachments/assets/5b58404d-f597-47ad-859b-1be668cce0e7" />
 
 
 
 ## Classification Report
-<img width="495" height="400" alt="Screenshot 2025-09-24 115315" src="https://github.com/user-attachments/assets/2ffa18c6-d553-4906-b8dc-b6acc3dabf1e" />
+<img width="489" height="394" alt="image" src="https://github.com/user-attachments/assets/1442dfeb-84f7-4b53-85be-9163661cc4c9" />
 
 
 
 ### New Sample Data Prediction
 
-<img width="533" height="566" alt="Screenshot 2025-09-24 115409" src="https://github.com/user-attachments/assets/9b241cf9-a9fc-4b45-b7bb-0cbabadbad47" />
+<img width="453" height="554" alt="image" src="https://github.com/user-attachments/assets/b8bdfeee-938e-46ad-8575-e6c35848d853" />
 
 
 
